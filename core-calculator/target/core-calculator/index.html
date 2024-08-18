@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Core Model Calculator</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link to CSS -->
+</head>
+<body>
+    <h1>Core Model Calculator</h1>
+    <form id="coreModelForm">
+        <h3>Core Factors</h3>
+        <label for="materialStrength">Material Strength (MPa): </label>
+        <input type="number" id="materialStrength" required><br><br>
+        <label for="safetyCoefficient">Safety Coefficient: </label>
+        <input type="number" id="safetyCoefficient" step="0.01" required><br><br>
+        <label for="temperatureFactor">Temperature Factor: </label>
+        <input type="number" id="temperatureFactor" step="0.01" required><br><br>
+        <label for="loadFactor">Load Factor: </label>
+        <input type="number" id="loadFactor" step="0.01" required><br><br>
+
+        <h3>Volume</h3>
+        <label for="totalVolume">Total Volume (cubic units): </label>
+        <input type="number" id="totalVolume" required><br><br>
+        <label for="nonFunctionalVolume">Non-Functional Volume (cubic units): </label>
+        <input type="number" id="nonFunctionalVolume" required><br><br>
+
+        <h3>Length</h3>
+        <label for="totalLength">Total Length (units): </label>
+        <input type="number" id="totalLength" required><br><br>
+        <label for="nonFunctionalLength">Non-Functional Length (units): </label>
+        <input type="number" id="nonFunctionalLength" required><br><br>
+
+        <h3>Area</h3>
+        <label for="totalArea">Total Area (square units): </label>
+        <input type="number" id="totalArea" required><br><br>
+        <label for="nonFunctionalArea">Non-Functional Area (square units): </label>
+        <input type="number" id="nonFunctionalArea" required><br><br>
+
+        <h3>Minimum Area</h3>
+        <label for="crossSections">Cross-Sectional Areas (comma separated, in square units): </label>
+        <input type="text" id="crossSections" required><br><br>
+
+        <button type="button" onclick="calculateCoreModel()">Calculate</button>
+    </form>
+
+    <h2>Results</h2>
+    <p id="results"></p>
+
+    <script src="coreModelCalculator.js"></script> <!-- Link to JavaScript -->
+</body>
+</html>

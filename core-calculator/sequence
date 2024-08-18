@@ -1,0 +1,19 @@
+core-model-calculator/
+│
+├── src/
+│   ├── main/
+│   │   ├── java/
+│   │   │   └── com/
+│   │   │       └── example/
+│   │   │           └── CoreModelCalculator.java
+│   │   ├── resources/
+│   │   └── webapp/
+│   │       ├── WEB-INF/
+│   │       │   ├── web.xml
+│   │       ├── index.html
+│   │       ├── style.css
+│   │       └── coreModelCalculator.js
+│   └── test/
+│       └── java/
+│
+├── pom.xml
