@@ -1,7 +1,7 @@
-# Core Model Calculator
+# Core Calculator
 
 ## Overview
-The Core Model Calculator is a Java-based application integrated with an HTML form. It calculates various parameters related to a specified core model. The parameters include:
+The Core Calculator is a Java-based application integrated with an HTML form. It calculates various parameters related to a specified core model. The parameters include:
 
 - Core Factors
 - Effective Volume / Core Volume (Ve)
@@ -21,7 +21,7 @@ The Core Model Calculator is a Java-based application integrated with an HTML fo
    mvn clean install
    ```
 3. **Deploy**: Copy the generated `.war` file to the `webapps` folder of your Tomcat installation.
-4. **Access the Application**: Open a web browser and navigate to `http://localhost:8080/core-model-calculator` to use the calculator.
+4. **Access the Application**: Open a web browser and navigate to `http://localhost:8080/core-calculator` to use the calculator.
 
 ## Input
 - **Core Model**: The core model identifier (e.g., "EE25/13/7").
